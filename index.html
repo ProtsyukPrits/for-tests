@@ -4,23 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+   
 </head>
 <body>
 
-<h2>What Can JavaScript Do?</h2>
 
-<p id="demo"  class="red" data-modal>JavaScript can change the style of an HTML element.</p>
-<p id="number" class="red1" ></p>
+
+
+
+
+
+
+
+
+
+
+<p id="number" class="red" ></p>
 
  
-    <div class="red__box" > 
+    <div class="red__box contaier" > 
         <button data-modal-open class="red__one" type="button" onclick="myFunctions()">openText!</button>
-        <button data-modal-close class="red__one" type="button">closeText!</button>
+        <button data-modal-close class="red__one" type="button" onclick="tyFunctions()">closeText!</button>
         <button class="red__one" type="button" onclick="numberFunctions()">see TheNumber!</button>
         
     </div>
+
+
+
+    
+    
+
+<!-- <script>
+    var i = 5;
+    for (var i = 0; i < 10; i++) {
+        // some statements
+    }
+    document.getElementById("demo").innerHTML = i;
+</script> -->
+
+
+    <!-- Local function -->
+<!-- <p id="demo1"></p>
+<p id="demo2"></p>
+    <script>
+        itsFunction();
+function itsFunction() {
+    var carName="Volvo";
+    document.getElementById("demo1").innerHTML= typeof carName + "" + carName;
+}
+    document.getElementById("demo2").innerHTML=typeof carName;
+</script> -->
+
+
+<!-- Global function -->
+    <!-- <p id="via"></p>
+    <script>
+        var carName = "Volvo";
+        otherFunctions();
+       function otherFunctions() {
+            document.getElementById("via").innerHTML = "This is Sparta" + carName;
+       }
+    </script> -->
 
 
 <script src="/js/myScript.js"> 
@@ -29,7 +77,7 @@
 
     <script src="/js/modal.js">
 
-    </script>
+    </script> -->
 
 </body>
 </html>
