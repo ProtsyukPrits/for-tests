@@ -1,0 +1,35 @@
+.entry {
+  @include cleaning;
+
+  margin-left: auto;
+}
+
+.entry__link {
+  margin-right: 35px;
+  text-decoration: none;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #000000;
+}
+
+.entry__button {
+  padding: 13px 50px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+
+  color: #ffffff;
+
+  background: #01996d;
+  border: 1px solid #01996d;
+  border-radius: 4px;
+
+  transform: translateY(50%, 50%);
+}

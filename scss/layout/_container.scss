@@ -1,8 +1,8 @@
-.contaier {
-  max-width: 1370px;
+.container {
+  width: 1370px;
 
   margin-left: 275px;
   margin-right: 275px;
-
-  outline: 2px solid red;
+  margin-right: auto;
+  margin-left: auto;
 }
