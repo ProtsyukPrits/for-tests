@@ -39,6 +39,87 @@
 
 <main>
 
+    <div>
+        <h5>Пробник для JS №1</h5>
+        <p id="numberone"></p>
+    </div>
+   
+    <div>
+        <h5>Пробник для JS №2</h5>
+        <p id="numbertwo"></p>
+    </div>
+
+    <div>
+        <h5>Пробник для JS №3</h5>
+        <p id="numberthree"></p>
+    </div>
+
+    <div>
+        <h5>Пробник для JS №4</h5>
+        <p id="numberfour"></p>
+    </div>
+
+    <div>
+        <h5>Пробник для JS №5</h5>
+        <p id="numberfive"></p>
+    </div>
+
+    <div>
+        <h5>Пробник для JS №7</h5>
+        <button onclick="sevenFunction()"> Try It</button>
+        <p id="numberseven">Mercedes, Volvo, BMW, Audi, Scoda, Renault, Nissan </p>
+    </div>
+
+<div>
+    <h5>Пробник для JS №8</h5>
+    <button onclick="eightFunction()"> Try It</button>
+    <p id="numbereight">Mercedes, Volvo, BMW, Audi, Scoda, Renault, Nissan </p>
+</div>
+
+<div>
+    <h5>Пробник для JS №9</h5>
+    <button onclick="nineFunction()"> Try It</button>
+    <p id="numbernine">Mercedes, Volvo, BMW, Audi, Scoda, Renault, Nissan </p>
+</div>
+
+<div>
+    <h5>Пробник для JS №10</h5>
+    <p id="numberten"></p>
+</div>
+
+<div>
+    <h5>Пробник для JS №11</h5>
+    <button onclick="elevenFunction()"> Try It</button>
+    
+</div>
+
+<div>
+    <h5>Пробник для JS №12</h5>
+    <p id="numbertwelve"></p>
+</div>
+
+<div>
+    <h5>Пробник для JS №13</h5>
+    <p id="numberthirteen"></p>
+</div>
+
+<div>
+    <h5>Пробник для JS №14</h5>
+    <p id="numberfourteen"></p>
+</div>
+
+<div>
+    <h5>Пробник для JS №15</h5>
+    <p id="numberfifteen"></p>
+</div>
+
+
+<div>
+    <h5>Пробник для JS №16</h5>
+    <p id="numbersixteen"></p>
+</div>
+
+
 </main>
 
 <footer>
@@ -59,6 +140,143 @@
         </div>
     </div>
 </div>
+
+<script>
+    let text1 = "Lorem ipsum dolor sit amet consectetur adipisicing elit";
+        document.getElementById("numberone").innerHTML = text1.length;
+</script>
+
+<script>
+    let text2 = "Lorem sit ipsum dolor sit amet consectetur adipisicing elit";
+         document.getElementById("numbertwo").innerHTML = text2.indexOf("sit", 10);
+        //  якщо параметр має більший за 1 значення, він шукає другий і йде в нормальному русі
+</script>
+
+<script>
+    let text3 = "Lorem sit ipsum sit dolor amet consectetur adipisicing elit";
+    document.getElementById("numberthree").innerHTML = text3.lastIndexOf("sit", 10); 
+    // допоки не переступить другий параметр буде брати тільки менший, як тільки 15> бере другий параметр
+</script>
+
+<script>
+    let text4 = "Mercedes, Volvo, BMW, Audi, Scoda, Renault, Nissan";
+    document.getElementById("numberfour").innerHTML = text4.slice(10,15);
+    // Так само мінусові тільки ззаду в перед рахується і знач буде (-40,-35)
+</script>
+
+
+<script>
+    let text5 = "Mercedes, Volvo, BMW, Audi, Scoda, Renault, Nissan";
+    document.getElementById("numberfive").innerHTML = text5.substring(10,15);
+    // Так само як і slice тільки без - значень
+</script>
+
+<script>
+    let text6 = "Mercedes, Volvo, BMW, Audi, Scoda, Renault, Nissan";
+    document.getElementById("numbersix").innerHTML = text6.substr(10, 16);
+    // Так само як і slice тільки 2й параметр вказує к-сть букв скільки ще буде закидувати після 10.
+    // Може бути просто 10 або і -10 мінусове значення
+</script>
+
+
+<script>
+   
+   
+    function sevenFunction() {
+        let text7 = document.getElementById("numberseven").innerHTML;
+    
+    document.getElementById("numberseven").innerHTML = 
+    text7.replace ("Mercedes, Volvo, BMW, Audi, Scoda, Renault, Nissan" , "Mercedes, Volvo, Scoda, Renault, Nissan")
+    }
+</script> 
+
+<script>
+   function eightFunction() {
+        let text8 = document.getElementById("numbereight").innerHTML;
+    
+    document.getElementById("numbereight").innerHTML = 
+    text8.toUpperCase();
+    }
+</script> 
+
+<script>
+    function nineFunction() {
+        let text9 = document.getElementById("numbernine").innerHTML;
+
+        document.getElementById("numbernine").innerHTML =
+            text9.toLowerCase();
+    }
+</script>
+
+
+<script>
+    let text101 = "Mercedes, Volvo";
+     let text102 = "BMW, Audi";
+      let text103 = "Scoda, Renault, Nissan";
+    let text10 = text101.concat(", " + text102).concat(" " + text103);
+    document.getElementById("numberten").innerHTML = text10;
+//    варіант запису і додавання значень в рядок
+</script>
+
+
+
+<script>
+    function elevenFunction() {
+        let text11 = "Hey bitch!!!";
+    alert (text11.trim());
+    }
+    // Видаляє прообіли з обох сторін
+</script>
+
+
+<script>
+    let text12 = "Mercedes, Volvo, BMW, Audi, Scoda, Renault, Nissan";
+    document.getElementById("numbertwelve").innerHTML = text12.padStart(57, 0);
+    // Зміщує рядок зліва,але враховує к-сть знаків в рядку і потім починає зміщувати
+</script>
+
+<script>
+    let text13 = "Mercedes, Volvo, BMW, Audi, Scoda, Renault, Nissan";
+    document.getElementById("numberthirteen").innerHTML = text13.padEnd(57, 0);
+    // Зміщує рядок зправа,але враховує к-сть знаків в рядку і потім починає зміщувати
+    // літери як padStart, padEnd не враховуєб тільки цифри
+</script>
+
+
+<script>
+    let text14 = "Mercedes, Volvo, BMW, Audi, Scoda, Renault, Nissan";
+    document.getElementById("numberfourteen").innerHTML = text14.charAt(7);
+    // Вибирає знак з рядка
+   
+</script>
+
+<script>
+    let text15 = "Mercedes, Volvo, BMW, Audi, Scoda, Renault, Nissan";
+    document.getElementById("numberfifteen").innerHTML = text15.charCodeAt(7);
+    // Вибирає знак з рядка і показує його унікод UTF-16
+
+</script>
+
+<script>
+    let text16 = "Mercedes Volvo BMW";
+    const myArr = text16.split("");
+
+    text16 = "";
+    for (let i = 0; i < myArr.length; i++) {
+        text16 += myArr[i] + "<br>"
+    }
+    document.getElementById("numbersixteen").innerHTML = text16;
+    // Розтягуємо слово по вертикалі
+</script>
+
+
+
+
+
+
+
+
+
 
 
 
